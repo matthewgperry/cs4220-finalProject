@@ -1,0 +1,19 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x420008e4: uart_ll_get_txfifo_len at /home/matt/Projects/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) panic_print_char_uart at /home/matt/Projects/esp/esp-idf/components/esp_system/panic.c:88
+ (inlined by) panic_print_char at /home/matt/Projects/esp/esp-idf/components/esp_system/panic.c:126
+[0m
+[0;33m--- 0x420008e0: uart_ll_get_txfifo_len at /home/matt/Projects/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) panic_print_char_uart at /home/matt/Projects/esp/esp-idf/components/esp_system/panic.c:88
+ (inlined by) panic_print_char at /home/matt/Projects/esp/esp-idf/components/esp_system/panic.c:126
+[0m
+[0;33m--- 0x420008e0: uart_ll_get_txfifo_len at /home/matt/Projects/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) panic_print_char_uart at /home/matt/Projects/esp/esp-idf/components/esp_system/panic.c:88
+ (inlined by) panic_print_char at /home/matt/Projects/esp/esp-idf/components/esp_system/panic.c:126
+[0m
+[0;33m--- 0x420008e0: uart_ll_get_txfifo_len at /home/matt/Projects/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) panic_print_char_uart at /home/matt/Projects/esp/esp-idf/components/esp_system/panic.c:88
+ (inlined by) panic_print_char at /home/matt/Projects/esp/esp-idf/components/esp_system/panic.c:126
+[0m
+[0m

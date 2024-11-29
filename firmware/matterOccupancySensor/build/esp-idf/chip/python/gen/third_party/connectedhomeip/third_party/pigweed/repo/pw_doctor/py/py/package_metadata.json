@@ -1,0 +1,17 @@
+{
+  "gn_target_name": "//third_party/connectedhomeip/third_party/pigweed/repo/pw_doctor/py:py",
+  "inputs": [
+
+  ],
+  "setup_sources": [
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_doctor/py/pyproject.toml",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_doctor/py/setup.cfg"
+  ],
+  "sources": [
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_doctor/py/pw_doctor/__init__.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_doctor/py/pw_doctor/doctor.py"
+  ],
+  "tests": [
+
+  ]
+}

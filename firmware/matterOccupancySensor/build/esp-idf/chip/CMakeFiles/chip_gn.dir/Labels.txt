@@ -1,0 +1,13 @@
+# Target labels
+ chip_gn
+# Source files and their labels
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/CMakeFiles/chip_gn
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/CMakeFiles/chip_gn.rule
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/CMakeFiles/chip_gn-complete.rule
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-build.rule
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-configure.rule
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-download.rule
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-install.rule
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-mkdir.rule
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-patch.rule
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-update.rule

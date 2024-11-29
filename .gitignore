@@ -32,3 +32,46 @@ fp-info-cache
 
 # JLCPCB production files
 jlcpcb/
+
+## ESP-IDF
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+/build*/
+/.idea
+/managed_components/
+/*.lock
+/sdkconfig
+/sdkconfig.old
+.DS_Store
+/sdk

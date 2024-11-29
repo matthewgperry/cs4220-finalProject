@@ -1,0 +1,675 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cd /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/bootloader/esp-idf/esptool_py && /home/matt/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/matt/Projects/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 bootloader 0x0 /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/bootloader/bootloader.bin
+Bootloader binary size 0x54d0 bytes. 0x6b30 bytes (56%) free.
+[2/12] No install step for 'bootloader'
+[3/12] Performing build step for 'chip_gn'
+ninja: no work to do.
+[4/12] No install step for 'chip_gn'
+[5/12] Completed 'bootloader'
+[6/12] Completed 'chip_gn'
+[7/12] Building CXX object esp-idf/DFRobot_C4001/CMakeFiles/__idf_DFRobot_C4001.dir/DFRobot_C4001.cpp.obj
+FAILED: esp-idf/DFRobot_C4001/CMakeFiles/__idf_DFRobot_C4001.dir/DFRobot_C4001.cpp.obj 
+ccache /home/matt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin/riscv32-esp-elf-g++ -DESP_PLATFORM -DIDF_VER=\"v5.2.1\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/config -I/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001 -I/home/matt/Projects/esp/esp-idf/components/newlib/platform_include -I/home/matt/Projects/esp/esp-idf/components/freertos/config/include -I/home/matt/Projects/esp/esp-idf/components/freertos/config/include/freertos -I/home/matt/Projects/esp/esp-idf/components/freertos/config/riscv/include -I/home/matt/Projects/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/matt/Projects/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/matt/Projects/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/matt/Projects/esp/esp-idf/components/freertos/esp_additions/include -I/home/matt/Projects/esp/esp-idf/components/esp_hw_support/include -I/home/matt/Projects/esp/esp-idf/components/esp_hw_support/include/soc -I/home/matt/Projects/esp/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/home/matt/Projects/esp/esp-idf/components/esp_hw_support/port/esp32c6/. -I/home/matt/Projects/esp/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/home/matt/Projects/esp/esp-idf/components/heap/include -I/home/matt/Projects/esp/esp-idf/components/log/include -I/home/matt/Projects/esp/esp-idf/components/soc/include -I/home/matt/Projects/esp/esp-idf/components/soc/esp32c6 -I/home/matt/Projects/esp/esp-idf/components/soc/esp32c6/include -I/home/matt/Projects/esp/esp-idf/components/hal/platform_port/include -I/home/matt/Projects/esp/esp-idf/components/hal/esp32c6/include -I/home/matt/Projects/esp/esp-idf/components/hal/include -I/home/matt/Projects/esp/esp-idf/components/esp_rom/include -I/home/matt/Projects/esp/esp-idf/components/esp_rom/include/esp32c6 -I/home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6 -I/home/matt/Projects/esp/esp-idf/components/esp_common/include -I/home/matt/Projects/esp/esp-idf/components/esp_system/include -I/home/matt/Projects/esp/esp-idf/components/esp_system/port/soc -I/home/matt/Projects/esp/esp-idf/components/esp_system/port/include/riscv -I/home/matt/Projects/esp/esp-idf/components/esp_system/port/include/private -I/home/matt/Projects/esp/esp-idf/components/riscv/include -I/home/matt/Projects/esp/esp-idf/components/lwip/include -I/home/matt/Projects/esp/esp-idf/components/lwip/include/apps -I/home/matt/Projects/esp/esp-idf/components/lwip/include/apps/sntp -I/home/matt/Projects/esp/esp-idf/components/lwip/lwip/src/include -I/home/matt/Projects/esp/esp-idf/components/lwip/port/include -I/home/matt/Projects/esp/esp-idf/components/lwip/port/freertos/include -I/home/matt/Projects/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/matt/Projects/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/matt/Projects/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/matt/Projects/esp/esp-idf/components/driver/include -I/home/matt/Projects/esp/esp-idf/components/driver/deprecated -I/home/matt/Projects/esp/esp-idf/components/driver/analog_comparator/include -I/home/matt/Projects/esp/esp-idf/components/driver/dac/include -I/home/matt/Projects/esp/esp-idf/components/driver/gpio/include -I/home/matt/Projects/esp/esp-idf/components/driver/gptimer/include -I/home/matt/Projects/esp/esp-idf/components/driver/i2c/include -I/home/matt/Projects/esp/esp-idf/components/driver/i2s/include -I/home/matt/Projects/esp/esp-idf/components/driver/ledc/include -I/home/matt/Projects/esp/esp-idf/components/driver/mcpwm/include -I/home/matt/Projects/esp/esp-idf/components/driver/parlio/include -I/home/matt/Projects/esp/esp-idf/components/driver/pcnt/include -I/home/matt/Projects/esp/esp-idf/components/driver/rmt/include -I/home/matt/Projects/esp/esp-idf/components/driver/sdio_slave/include -I/home/matt/Projects/esp/esp-idf/components/driver/sdmmc/include -I/home/matt/Projects/esp/esp-idf/components/driver/sigma_delta/include -I/home/matt/Projects/esp/esp-idf/components/driver/spi/include -I/home/matt/Projects/esp/esp-idf/components/driver/temperature_sensor/include -I/home/matt/Projects/esp/esp-idf/components/driver/touch_sensor/include -I/home/matt/Projects/esp/esp-idf/components/driver/twai/include -I/home/matt/Projects/esp/esp-idf/components/driver/uart/include -I/home/matt/Projects/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/matt/Projects/esp/esp-idf/components/esp_pm/include -I/home/matt/Projects/esp/esp-idf/components/esp_ringbuf/include -I/home/matt/Projects/esp/esp-idf/components/esp_timer/include -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor=. -fmacro-prefix-map=/home/matt/Projects/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -Wno-error=uninitialized -Wno-error=maybe-uninitialized -Wno-missing-field-initializers -Wno-error=array-bounds -Wno-write-strings -Wno-format-nonliteral -Wno-format-security -std=gnu++2b -fno-exceptions -fno-rtti -std=gnu++17 -Os -DCHIP_HAVE_CONFIG_H -Wno-overloaded-virtual -MD -MT esp-idf/DFRobot_C4001/CMakeFiles/__idf_DFRobot_C4001.dir/DFRobot_C4001.cpp.obj -MF esp-idf/DFRobot_C4001/CMakeFiles/__idf_DFRobot_C4001.dir/DFRobot_C4001.cpp.obj.d -o esp-idf/DFRobot_C4001/CMakeFiles/__idf_DFRobot_C4001.dir/DFRobot_C4001.cpp.obj -c /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp
+In file included from /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:3:
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp: In member function 'sAllData_t DFRobot_C4001::anaysisData(uint8_t*, uint8_t)':
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:18: error: 'TAG' was not declared in this scope
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:9: note: in expansion of macro 'ESP_LOGW'
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |         ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:18: error: 'TAG' was not declared in this scope
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:9: note: in expansion of macro 'ESP_LOGW'
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |         ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:18: error: 'TAG' was not declared in this scope
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:9: note: in expansion of macro 'ESP_LOGW'
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |         ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:18: error: 'TAG' was not declared in this scope
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:9: note: in expansion of macro 'ESP_LOGW'
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |         ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:18: error: 'TAG' was not declared in this scope
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:111:9: note: in expansion of macro 'ESP_LOGW'
+  111 |         ESP_LOGW(TAG, "No valid data marker found");
+      |         ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:22: error: 'TAG' was not declared in this scope
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:13: note: in expansion of macro 'ESP_LOGI'
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:22: error: 'TAG' was not declared in this scope
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:13: note: in expansion of macro 'ESP_LOGI'
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:22: error: 'TAG' was not declared in this scope
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:13: note: in expansion of macro 'ESP_LOGI'
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:22: error: 'TAG' was not declared in this scope
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:13: note: in expansion of macro 'ESP_LOGI'
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:22: error: 'TAG' was not declared in this scope
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:123:13: note: in expansion of macro 'ESP_LOGI'
+  123 |             ESP_LOGI(TAG, "Human presence detected");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:22: error: 'TAG' was not declared in this scope
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:13: note: in expansion of macro 'ESP_LOGI'
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:22: error: 'TAG' was not declared in this scope
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:13: note: in expansion of macro 'ESP_LOGI'
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:22: error: 'TAG' was not declared in this scope
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:13: note: in expansion of macro 'ESP_LOGI'
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:22: error: 'TAG' was not declared in this scope
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:13: note: in expansion of macro 'ESP_LOGI'
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:22: error: 'TAG' was not declared in this scope
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:126:13: note: in expansion of macro 'ESP_LOGI'
+  126 |             ESP_LOGI(TAG, "No human presence");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:22: error: 'TAG' was not declared in this scope
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:13: note: in expansion of macro 'ESP_LOGE'
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:22: error: 'TAG' was not declared in this scope
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:13: note: in expansion of macro 'ESP_LOGE'
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:22: error: 'TAG' was not declared in this scope
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:13: note: in expansion of macro 'ESP_LOGE'
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:22: error: 'TAG' was not declared in this scope
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:13: note: in expansion of macro 'ESP_LOGE'
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:22: error: 'TAG' was not declared in this scope
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:138:13: note: in expansion of macro 'ESP_LOGE'
+  138 |             ESP_LOGE(TAG, "Input data too long for buffer");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:26: error: 'TAG' was not declared in this scope
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:17: note: in expansion of macro 'ESP_LOGE'
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:26: error: 'TAG' was not declared in this scope
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:17: note: in expansion of macro 'ESP_LOGE'
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:26: error: 'TAG' was not declared in this scope
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:17: note: in expansion of macro 'ESP_LOGE'
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:26: error: 'TAG' was not declared in this scope
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:17: note: in expansion of macro 'ESP_LOGE'
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:26: error: 'TAG' was not declared in this scope
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:167:17: note: in expansion of macro 'ESP_LOGE'
+  167 |                 ESP_LOGE(TAG, "Error parsing target number");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:26: error: 'TAG' was not declared in this scope
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:17: note: in expansion of macro 'ESP_LOGE'
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:26: error: 'TAG' was not declared in this scope
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:17: note: in expansion of macro 'ESP_LOGE'
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:26: error: 'TAG' was not declared in this scope
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:17: note: in expansion of macro 'ESP_LOGE'
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:26: error: 'TAG' was not declared in this scope
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:17: note: in expansion of macro 'ESP_LOGE'
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:26: error: 'TAG' was not declared in this scope
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:175:17: note: in expansion of macro 'ESP_LOGE'
+  175 |                 ESP_LOGE(TAG, "Error parsing range");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:26: error: 'TAG' was not declared in this scope
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:17: note: in expansion of macro 'ESP_LOGE'
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:26: error: 'TAG' was not declared in this scope
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:17: note: in expansion of macro 'ESP_LOGE'
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:26: error: 'TAG' was not declared in this scope
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:17: note: in expansion of macro 'ESP_LOGE'
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:26: error: 'TAG' was not declared in this scope
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:17: note: in expansion of macro 'ESP_LOGE'
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:26: error: 'TAG' was not declared in this scope
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:183:17: note: in expansion of macro 'ESP_LOGE'
+  183 |                 ESP_LOGE(TAG, "Error parsing speed");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:26: error: 'TAG' was not declared in this scope
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:17: note: in expansion of macro 'ESP_LOGE'
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:26: error: 'TAG' was not declared in this scope
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:17: note: in expansion of macro 'ESP_LOGE'
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:26: error: 'TAG' was not declared in this scope
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:17: note: in expansion of macro 'ESP_LOGE'
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:26: error: 'TAG' was not declared in this scope
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:17: note: in expansion of macro 'ESP_LOGE'
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:26: error: 'TAG' was not declared in this scope
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                          ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:191:17: note: in expansion of macro 'ESP_LOGE'
+  191 |                 ESP_LOGE(TAG, "Error parsing energy");
+      |                 ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:22: error: 'TAG' was not declared in this scope
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:13: note: in expansion of macro 'ESP_LOGI'
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:22: error: 'TAG' was not declared in this scope
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:13: note: in expansion of macro 'ESP_LOGI'
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:22: error: 'TAG' was not declared in this scope
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:13: note: in expansion of macro 'ESP_LOGI'
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:22: error: 'TAG' was not declared in this scope
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:13: note: in expansion of macro 'ESP_LOGI'
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:22: error: 'TAG' was not declared in this scope
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:194:13: note: in expansion of macro 'ESP_LOGI'
+  194 |             ESP_LOGI(TAG, "Parsed values - Number: %d, Range: %.2f, Speed: %.2f, Energy: %.2f",
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:22: error: 'TAG' was not declared in this scope
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:13: note: in expansion of macro 'ESP_LOGE'
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:22: error: 'TAG' was not declared in this scope
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:13: note: in expansion of macro 'ESP_LOGE'
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:22: error: 'TAG' was not declared in this scope
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:13: note: in expansion of macro 'ESP_LOGE'
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:22: error: 'TAG' was not declared in this scope
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:13: note: in expansion of macro 'ESP_LOGE'
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:22: error: 'TAG' was not declared in this scope
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |                      ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:197:13: note: in expansion of macro 'ESP_LOGE'
+  197 |             ESP_LOGE(TAG, "Insufficient data parts in speed detection mode");
+      |             ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:18: error: 'TAG' was not declared in this scope
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:436:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:9: note: in expansion of macro 'ESP_LOGW'
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |         ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:18: error: 'TAG' was not declared in this scope
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:437:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:9: note: in expansion of macro 'ESP_LOGW'
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |         ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:18: error: 'TAG' was not declared in this scope
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:438:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:9: note: in expansion of macro 'ESP_LOGW'
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |         ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:18: error: 'TAG' was not declared in this scope
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:439:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:9: note: in expansion of macro 'ESP_LOGW'
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |         ^~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:18: error: 'TAG' was not declared in this scope
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |                  ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:440:81: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                 ^~~
+/home/matt/Projects/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001/DFRobot_C4001.cpp:200:9: note: in expansion of macro 'ESP_LOGW'
+  200 |         ESP_LOGW(TAG, "Unknown data format received");
+      |         ^~~~~~~~
+ninja: build stopped: subcommand failed.

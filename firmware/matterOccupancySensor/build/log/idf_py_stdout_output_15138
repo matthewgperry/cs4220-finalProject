@@ -1,0 +1,108 @@
+-- Existing sdkconfig '/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/sdkconfig' renamed to '/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/sdkconfig.old'.
+-- Found Git: /usr/bin/git (found version "2.47.0")
+-- Component directory /home/matt/Projects/esp/esp-matter/examples/common/blemesh_platform does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/matt/Projects/esp/esp-matter/examples/common/cmake_common does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/matt/Projects/esp/esp-matter/examples/common/external_platform does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/matt/Projects/esp/esp-matter/examples/common/relinker does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/matt/Projects/esp/esp-matter/examples/common/secondary_ble_adv does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/matt/Projects/esp/esp-matter/examples/common/utils does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/external_components does not contain a CMakeLists.txt file. No component will be added
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/matt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/matt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/matt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c6
+NOTICE: Skipping optional dependency: espressif/cmake_utilities
+NOTICE: Skipping optional dependency: espressif/cmake_utilities
+NOTICE: Skipping optional dependency: espressif/cmake_utilities
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/esp_lvgl_port": "2.4.1" -> "2.4.2"
+Dependency "espressif/mdns": "1.4.0" -> "1.4.2"
+Dependency "lvgl/lvgl": "9.2.0" -> "9.2.2"
+Consider running "idf.py update-dependencies" to update your lock file.
+Processing 30 dependencies:
+[1/30] espressif/button (3.4.0)
+[2/30] espressif/cbor (0.6.0~1)
+[3/30] espressif/cmake_utilities (0.5.3)
+[4/30] espressif/esp-serial-flasher (0.0.11)
+[5/30] espressif/esp_bsp_generic (1.2.1)
+[6/30] espressif/esp_delta_ota (1.1.0)
+[7/30] espressif/esp_diag_data_store (1.0.1)
+[8/30] espressif/esp_diagnostics (1.0.2)
+[9/30] espressif/esp_encrypted_img (2.1.0)
+[10/30] espressif/esp_insights (1.0.1)
+[11/30] espressif/esp_lcd_gc9a01 (1.2.0)
+[12/30] espressif/esp_lcd_ili9341 (1.2.0)
+[13/30] espressif/esp_lcd_touch (1.1.2)
+[14/30] espressif/esp_lcd_touch_cst816s (1.0.3~1)
+[15/30] espressif/esp_lcd_touch_ft5x06 (1.0.6~1)
+[16/30] espressif/esp_lcd_touch_gt1151 (1.0.5~2)
+[17/30] espressif/esp_lcd_touch_gt911 (1.1.1~1)
+[18/30] espressif/esp_lcd_touch_tt21100 (1.1.0~1)
+[19/30] espressif/esp_lvgl_port (2.4.1)
+[20/30] espressif/esp_rcp_update (1.2.0)
+[21/30] espressif/esp_secure_cert_mgr (2.5.0)
+[22/30] espressif/jsmn (1.1.0)
+[23/30] espressif/json_generator (1.1.2)
+[24/30] espressif/json_parser (1.0.3)
+[25/30] espressif/led_indicator (0.9.3)
+[26/30] espressif/led_strip (3.0.0)
+[27/30] espressif/mdns (1.4.0)
+[28/30] espressif/rmaker_common (1.4.6)
+[29/30] lvgl/lvgl (9.2.0)
+[30/30] idf (5.2.1)
+-- Found Python3: /home/matt/.espressif/python_env/idf5.2_py3.12_env/bin/python3.12 (found version "3.12.7") found components: Interpreter
+NOTICE: Skipping optional dependency: espressif/cmake_utilities
+-- Project sdkconfig file /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/sdkconfig
+Loading defaults file /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/sdkconfig.defaults...
+Loading defaults file /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/sdkconfig.defaults.esp32c6...
+/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/sdkconfig.defaults.esp32c6:10 CONFIG_BT_NIMBLE_HCI_EVT_BUF_SIZE was replaced with CONFIG_BT_NIMBLE_TRANSPORT_EVT_SIZE
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/matt/.espressif/python_env/idf5.2_py3.12_env/bin/python (found version "3.12.7") found components: Interpreter
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "matterOccupancySensor" version: 1.0
+-- Adding linker script /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_system/ld/esp32c6/sections.ld.in
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.api.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.rvfp.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.version.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.phy.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.coexist.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.net80211.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.pp.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.wdt.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib-normal.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.heap.ld
+-- Adding linker script /home/matt/Projects/esp/esp-idf/components/soc/esp32c6/ld/esp32c6.peripherals.ld
+-- BUTTON: 3.4.0
+-- LVGL version: 9.2.0
+-- LED_INDICATOR: 0.9.3
+-- ESP_LCD_GC9A01: 1.2.0
+-- ESP_LCD_ILI9341: 1.2.0
+-- Components: DFRobot_C4001 app_bridge app_reset app_trace app_update bootloader bootloader_support bt chip cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_matter esp_matter_bridge esp_matter_console esp_matter_controller esp_matter_ota_provider esp_matter_rainmaker esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__button espressif__cbor espressif__cmake_utilities espressif__esp-serial-flasher espressif__esp_bsp_generic espressif__esp_delta_ota espressif__esp_diag_data_store espressif__esp_diagnostics espressif__esp_encrypted_img espressif__esp_insights espressif__esp_lcd_gc9a01 espressif__esp_lcd_ili9341 espressif__esp_lcd_touch espressif__esp_lcd_touch_cst816s espressif__esp_lcd_touch_ft5x06 espressif__esp_lcd_touch_gt1151 espressif__esp_lcd_touch_gt911 espressif__esp_lcd_touch_tt21100 espressif__esp_lvgl_port espressif__esp_rcp_update espressif__esp_secure_cert_mgr espressif__jsmn espressif__json_generator espressif__json_parser espressif__led_indicator espressif__led_strip espressif__mdns espressif__rmaker_common esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl__lvgl lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/components/DFRobot_C4001 /home/matt/Projects/esp/esp-matter/examples/common/app_bridge /home/matt/Projects/esp/esp-matter/examples/common/app_reset /home/matt/Projects/esp/esp-idf/components/app_trace /home/matt/Projects/esp/esp-idf/components/app_update /home/matt/Projects/esp/esp-idf/components/bootloader /home/matt/Projects/esp/esp-idf/components/bootloader_support /home/matt/Projects/esp/esp-idf/components/bt /home/matt/Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip /home/matt/Projects/esp/esp-idf/components/cmock /home/matt/Projects/esp/esp-idf/components/console /home/matt/Projects/esp/esp-idf/components/cxx /home/matt/Projects/esp/esp-idf/components/driver /home/matt/Projects/esp/esp-idf/components/efuse /home/matt/Projects/esp/esp-idf/components/esp-tls /home/matt/Projects/esp/esp-idf/components/esp_adc /home/matt/Projects/esp/esp-idf/components/esp_app_format /home/matt/Projects/esp/esp-idf/components/esp_bootloader_format /home/matt/Projects/esp/esp-idf/components/esp_coex /home/matt/Projects/esp/esp-idf/components/esp_common /home/matt/Projects/esp/esp-idf/components/esp_eth /home/matt/Projects/esp/esp-idf/components/esp_event /home/matt/Projects/esp/esp-idf/components/esp_gdbstub /home/matt/Projects/esp/esp-idf/components/esp_hid /home/matt/Projects/esp/esp-idf/components/esp_http_client /home/matt/Projects/esp/esp-idf/components/esp_http_server /home/matt/Projects/esp/esp-idf/components/esp_https_ota /home/matt/Projects/esp/esp-idf/components/esp_https_server /home/matt/Projects/esp/esp-idf/components/esp_hw_support /home/matt/Projects/esp/esp-idf/components/esp_lcd /home/matt/Projects/esp/esp-idf/components/esp_local_ctrl /home/matt/Projects/esp/esp-matter/components/esp_matter /home/matt/Projects/esp/esp-matter/components/esp_matter_bridge /home/matt/Projects/esp/esp-matter/components/esp_matter_console /home/matt/Projects/esp/esp-matter/components/esp_matter_controller /home/matt/Projects/esp/esp-matter/components/esp_matter_ota_provider /home/matt/Projects/esp/esp-matter/components/esp_matter_rainmaker /home/matt/Projects/esp/esp-idf/components/esp_mm /home/matt/Projects/esp/esp-idf/components/esp_netif /home/matt/Projects/esp/esp-idf/components/esp_netif_stack /home/matt/Projects/esp/esp-idf/components/esp_partition /home/matt/Projects/esp/esp-idf/components/esp_phy /home/matt/Projects/esp/esp-idf/components/esp_pm /home/matt/Projects/esp/esp-idf/components/esp_psram /home/matt/Projects/esp/esp-idf/components/esp_ringbuf /home/matt/Projects/esp/esp-idf/components/esp_rom /home/matt/Projects/esp/esp-idf/components/esp_system /home/matt/Projects/esp/esp-idf/components/esp_timer /home/matt/Projects/esp/esp-idf/components/esp_wifi /home/matt/Projects/esp/esp-idf/components/espcoredump /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__button /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__cbor /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__cmake_utilities /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp-serial-flasher /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_bsp_generic /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_delta_ota /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_diag_data_store /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_diagnostics /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_encrypted_img /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_insights /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_lcd_gc9a01 /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_lcd_ili9341 /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_lcd_touch /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_lcd_touch_cst816s /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_lcd_touch_ft5x06 /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_lcd_touch_gt1151 /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_lcd_touch_gt911 /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_lcd_touch_tt21100 /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_lvgl_port /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_rcp_update /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__esp_secure_cert_mgr /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__jsmn /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__json_generator /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__json_parser /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__led_indicator /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__led_strip /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__mdns /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/espressif__rmaker_common /home/matt/Projects/esp/esp-idf/components/esptool_py /home/matt/Projects/esp/esp-idf/components/fatfs /home/matt/Projects/esp/esp-idf/components/freertos /home/matt/Projects/esp/esp-idf/components/hal /home/matt/Projects/esp/esp-idf/components/heap /home/matt/Projects/esp/esp-idf/components/http_parser /home/matt/Projects/esp/esp-idf/components/idf_test /home/matt/Projects/esp/esp-idf/components/ieee802154 /home/matt/Projects/esp/esp-idf/components/json /home/matt/Projects/esp/esp-idf/components/log /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/managed_components/lvgl__lvgl /home/matt/Projects/esp/esp-idf/components/lwip /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/main /home/matt/Projects/esp/esp-idf/components/mbedtls /home/matt/Projects/esp/esp-idf/components/mqtt /home/matt/Projects/esp/esp-idf/components/newlib /home/matt/Projects/esp/esp-idf/components/nvs_flash /home/matt/Projects/esp/esp-idf/components/nvs_sec_provider /home/matt/Projects/esp/esp-idf/components/openthread /home/matt/Projects/esp/esp-idf/components/partition_table /home/matt/Projects/esp/esp-idf/components/protobuf-c /home/matt/Projects/esp/esp-idf/components/protocomm /home/matt/Projects/esp/esp-idf/components/pthread /home/matt/Projects/esp/esp-idf/components/riscv /home/matt/Projects/esp/esp-idf/components/sdmmc /home/matt/Projects/esp/esp-idf/components/soc /home/matt/Projects/esp/esp-idf/components/spi_flash /home/matt/Projects/esp/esp-idf/components/spiffs /home/matt/Projects/esp/esp-idf/components/tcp_transport /home/matt/Projects/esp/esp-idf/components/ulp /home/matt/Projects/esp/esp-idf/components/unity /home/matt/Projects/esp/esp-idf/components/usb /home/matt/Projects/esp/esp-idf/components/vfs /home/matt/Projects/esp/esp-idf/components/wear_levelling /home/matt/Projects/esp/esp-idf/components/wifi_provisioning /home/matt/Projects/esp/esp-idf/components/wpa_supplicant
+-- Configuring done (39.2s)
+-- Generating done (0.4s)
+-- Build files have been written to: /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build

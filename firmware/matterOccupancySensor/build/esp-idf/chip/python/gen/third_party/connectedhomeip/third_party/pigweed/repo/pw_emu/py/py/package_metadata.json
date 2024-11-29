@@ -1,0 +1,29 @@
+{
+  "gn_target_name": "//third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py:py",
+  "inputs": [
+
+  ],
+  "setup_sources": [
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/pyproject.toml",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/setup.cfg",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/setup.py"
+  ],
+  "sources": [
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/pw_emu/__init__.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/pw_emu/__main__.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/pw_emu/core.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/pw_emu/frontend.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/pw_emu/pigweed_emulators.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/pw_emu/qemu.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/pw_emu/renode.py"
+  ],
+  "tests": [
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/tests/__init__.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/tests/cli_test.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/tests/common.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/tests/core_test.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/tests/frontend_test.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/tests/qemu_test.py",
+    "../../../../../../../../../../Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_emu/py/tests/renode_test.py"
+  ]
+}

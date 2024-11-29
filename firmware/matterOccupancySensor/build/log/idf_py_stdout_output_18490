@@ -1,0 +1,114 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/bootloader/esp-idf/esptool_py && /home/matt/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/matt/Projects/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 bootloader 0x0 /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/bootloader/bootloader.bin
+Bootloader binary size 0x54d0 bytes. 0x6b30 bytes (56%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Performing build step for 'chip_gn'
+ninja: no work to do.
+[4/8] No install step for 'chip_gn'
+[5/8] Completed 'bootloader'
+[6/8] Completed 'chip_gn'
+[7/8] cd /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/esp-idf/esptool_py && /home/matt/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/matt/Projects/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 partition --type app /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/partition_table/partition-table.bin /home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build/matterOccupancySensor.bin
+matterOccupancySensor.bin binary size 0x191320 bytes. Smallest app partition is 0x1e0000 bytes. 0x4ece0 bytes (16%) free.
+[7/8] cd /home/matt/Projects/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/matt/Projects/esp/esp-idf -D "SERIAL_TOOL=/home/matt/.espressif/python_env/idf5.2_py3.12_env/bin/python;;/home/matt/Projects/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/matt/Notes/uni/cs4220/project/occupancySensor/firmware/matterOccupancySensor/build -P /home/matt/Projects/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c6 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x20000 matterOccupancySensor.bin 0xc000 partition_table/partition-table.bin 0x1d000 ota_data_initial.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-C6 (QFN40) (revision v0.0)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+MAC: 40:4c:ca:ff:fe:40:6e:bc
+BASE MAC: 40:4c:ca:40:6e:bc
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x001b1fff...
+Flash will be erased from 0x0000c000 to 0x0000cfff...
+Flash will be erased from 0x0001d000 to 0x0001efff...
+Flash params set to 0x0220
+SHA digest in image updated
+Compressed 21712 bytes to 13081...
+Writing at 0x00000000... (100 %)
+Wrote 21712 bytes (13081 compressed) at 0x00000000 in 0.6 seconds (effective 295.7 kbit/s)...
+Hash of data verified.
+Compressed 1643296 bytes to 1001887...
+Writing at 0x00020000... (1 %)
+Writing at 0x0002d274... (3 %)
+Writing at 0x0003a17c... (4 %)
+Writing at 0x00046c31... (6 %)
+Writing at 0x0004fc5a... (8 %)
+Writing at 0x00054af8... (9 %)
+Writing at 0x0005b721... (11 %)
+Writing at 0x00062c8e... (12 %)
+Writing at 0x00069916... (14 %)
+Writing at 0x00070a65... (16 %)
+Writing at 0x000767b8... (17 %)
+Writing at 0x0007d3fb... (19 %)
+Writing at 0x00083c50... (20 %)
+Writing at 0x0008a0fe... (22 %)
+Writing at 0x0009066c... (24 %)
+Writing at 0x00096786... (25 %)
+Writing at 0x0009c607... (27 %)
+Writing at 0x000a3104... (29 %)
+Writing at 0x000a8e6b... (30 %)
+Writing at 0x000affb9... (32 %)
+Writing at 0x000b64e0... (33 %)
+Writing at 0x000bc1ee... (35 %)
+Writing at 0x000c277a... (37 %)
+Writing at 0x000c8885... (38 %)
+Writing at 0x000ce39c... (40 %)
+Writing at 0x000d43d9... (41 %)
+Writing at 0x000dab65... (43 %)
+Writing at 0x000e1017... (45 %)
+Writing at 0x000e72c3... (46 %)
+Writing at 0x000ed342... (48 %)
+Writing at 0x000f36a3... (50 %)
+Writing at 0x000f954a... (51 %)
+Writing at 0x000ff8a2... (53 %)
+Writing at 0x00105a52... (54 %)
+Writing at 0x0010be12... (56 %)
+Writing at 0x00111a54... (58 %)
+Writing at 0x00117bbe... (59 %)
+Writing at 0x0011dd95... (61 %)
+Writing at 0x00124351... (62 %)
+Writing at 0x0012a1da... (64 %)
+Writing at 0x00130450... (66 %)
+Writing at 0x00136350... (67 %)
+Writing at 0x0013c266... (69 %)
+Writing at 0x001424a6... (70 %)
+Writing at 0x00148549... (72 %)
+Writing at 0x0014e4de... (74 %)
+Writing at 0x00154802... (75 %)
+Writing at 0x00159fc9... (77 %)
+Writing at 0x0015fa15... (79 %)
+Writing at 0x001657c0... (80 %)
+Writing at 0x0016c8ba... (82 %)
+Writing at 0x00172283... (83 %)
+Writing at 0x001789e7... (85 %)
+Writing at 0x0017e2dd... (87 %)
+Writing at 0x0018408c... (88 %)
+Writing at 0x0018a543... (90 %)
+Writing at 0x00190472... (91 %)
+Writing at 0x0019695b... (93 %)
+Writing at 0x0019c740... (95 %)
+Writing at 0x001a2e20... (96 %)
+Writing at 0x001a870a... (98 %)
+Writing at 0x001afc35... (100 %)
+Wrote 1643296 bytes (1001887 compressed) at 0x00020000 in 22.8 seconds (effective 576.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 181...
+Writing at 0x0000c000... (100 %)
+Wrote 3072 bytes (181 compressed) at 0x0000c000 in 0.1 seconds (effective 482.1 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0001d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0001d000 in 0.1 seconds (effective 732.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,39 @@
+CMake Deprecation Warning at CMakeLists.txt:3 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at /home/matt/Projects/esp/esp-matter/examples/common/cmake_common/components_include.cmake:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+Call Stack (most recent call first):
+  CMakeLists.txt:17 (include)
+
+
+IDF_VERSION: 5.2.1; idf version number: 5.2.1
+Sequence of SDKCONFIG files: sdkconfig.defaults
+warning: default on the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/matt/Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:966, /home/matt/Projects/esp/esp-matter/components/esp_matter/Kconfig:48) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/matt/Projects/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:966, /home/matt/Projects/esp/esp-matter/components/esp_matter/Kconfig:48) is defined with a prompt outside the choice
+CMake Deprecation Warning at /home/matt/Projects/esp/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:21 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+ESP Insights Project commit: 36b0106-dirty
+CMake Deprecation Warning at managed_components/espressif__esp-serial-flasher/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+

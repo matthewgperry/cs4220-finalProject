@@ -1,0 +1,520 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c410,len:0xe58
+load:0x4086e610,len:0x2e20
+entry 0x4086c41a
+[0;32mI (23) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 23 2024 17:15:33[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (64) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (72) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (87) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (94) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (102) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (109) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (117) boot: End of partition table[0m
+[0;32mI (121) esp_image: segment 0: paddr=00020020 vaddr=42140020 size=3ee50h (257616) map[0m
+[0;32mI (183) esp_image: segment 1: paddr=0005ee78 vaddr=40800000 size=011a0h (  4512) load[0m
+[0;32mI (185) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=133618h (1259032) map[0m
+[0;32mI (448) esp_image: segment 3: paddr=00193640 vaddr=408011a0 size=19200h (102912) load[0m
+[0;32mI (473) esp_image: segment 4: paddr=001ac848 vaddr=4081a3a0 size=03be8h ( 15336) load[0m
+[0;32mI (477) esp_image: segment 5: paddr=001b0438 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (485) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (485) boot: Disabling RNG early entropy source...[0m
+[0;32mI (502) cpu_start: Unicore app[0m
+[0;33mW (510) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (517) cpu_start: Pro cpu start user code[0m
+[0;32mI (517) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (517) cpu_start: Application information:[0m
+[0;32mI (520) cpu_start: Project name:     matterOccupancySensor[0m
+[0;32mI (526) cpu_start: App version:      1.0[0m
+[0;32mI (531) cpu_start: Compile time:     Nov 23 2024 17:15:30[0m
+[0;32mI (537) cpu_start: ELF file SHA256:  0db1b5ada...[0m
+[0;32mI (542) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (547) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (552) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (557) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (561) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (569) heap_init: At 40831880 len 0004AD90 (299 KiB): RAM[0m
+[0;32mI (575) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (581) heap_init: At 50000004 len 00003FE4 (15 KiB): RTCRAM[0m
+[0;32mI (588) spi_flash: detected chip: generic[0m
+[0;32mI (592) spi_flash: flash io: dio[0m
+[0;33mW (596) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;33mW (609) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (621) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (626) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (633) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (639) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (644) main_task: Started on CPU0[0m
+[0;32mI (644) main_task: Calling app_main()[0m
+[0;32mI (664) app_driver: Sensor initialized[0m
+[0;32mI (664) button: IoT Button Version: 3.4.0[0m
+[0;32mI (664) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (674) app_main: Sensor created with endpoint_id 1[0m
+[0;31mE (674) esp_matter_core: Attribute should be non-volatile to set a deferred persistence time[0m
+[0;32mI (684) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (684) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (704) wifi:wifi driver task: 4083dcf4, prio:23, stack:6656, core=0[0m
+[0;32mI (704) wifi:wifi firmware version: a9f5b59[0m
+[0;32mI (704) wifi:wifi certification version: v7.0[0m
+[0;32mI (704) wifi:config NVS flash: enabled[0m
+[0;32mI (714) wifi:config nano formating: disabled[0m
+[0;32mI (714) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N[0m
+[0;32mI (724) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (724) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (734) wifi:Init management short buffer num: 32[0m
+[0;32mI (734) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (734) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (744) wifi:Init static rx buffer size: 1700[0m
+[0;32mI (744) wifi:Init static rx buffer num: 10[0m
+[0;32mI (754) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (754) wifi_init: rx ba win: 6[0m
+[0;32mI (754) wifi_init: tcpip mbox: 32[0m
+[0;32mI (764) wifi_init: udp mbox: 6[0m
+[0;32mI (764) wifi_init: tcp mbox: 6[0m
+[0;32mI (764) wifi_init: tcp tx win: 5760[0m
+[0;32mI (774) wifi_init: tcp rx win: 5760[0m
+[0;32mI (774) wifi_init: tcp mss: 1440[0m
+[0;32mI (784) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (784) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (794) esp_matter_core: Server Cluster 0x0000001D on endpoint 0x0000 already exists. Not creating again.[0m
+[0;33mW (804) esp_matter_core: Attribute 0x00000000 on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (814) esp_matter_core: Attribute 0x00000001 on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (824) esp_matter_core: Attribute 0x00000002 on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (834) esp_matter_core: Attribute 0x00000003 on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (844) esp_matter_core: Attribute 0x0000FFFC on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (854) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (884) chip[DL]: NVS set: chip-counters/reboot-count = 6 (0x6)[0m
+[0;32mI (884) chip[DL]: Real time clock set to 946684800 (0100/00/01 00:00:00 UTC)[0m
+[0;32mI (884) BLE_INIT: Using main XTAL as clock source[0m
+[0;32mI (894) BLE_INIT: ble controller commit:[217f1bf][0m
+[0;32mI (894) phy_init: phy_version 250,e14681b,Jan 24 2024,17:43:11[0m
+[0;32mI (944) phy: libbtbb version: 939f79c, Jan 24 2024, 17:43:26[0m
+[0;32mI (944) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (944) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (954) CHIP[DL]: BLE host-controller synced[0m
+[0;32mI (1454) chip[DL]: Starting ESP WiFi layer[0m
+[0;33mW (1454) wifi:(bf)761:0x600a7cac:0x01b4b4b0[0m
+[0;33mW (1454) wifi:(agc)0x600a7128:0xd21a1800, min.avgNF:0xce->0xd2(dB), RCalCount:0x1a1, min.RRssi:0x800(-128.00)[0m
+[0;33mW (1454) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (1464) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (1464) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (1464) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (1474) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (1474) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (1474) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (1484) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (1484) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (1484) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (1494) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (1494) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (1494) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1504) wifi:mode : sta (40:4c:ca:40:6e:bc)[0m
+[0;32mI (1504) wifi:enable tsf[0m
+[0;32mI (1514) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 40[0m
+[0;33mW (1514) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1524) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (1534) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 2[0m
+[0;32mI (1534) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1544) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1554) wifi:state: init -> auth (b0)[0m
+[0;32mI (1554) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 40[0m
+[0;32mI (1554) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1534) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;32mI (1564) wifi:state: assoc -> run (10)[0m
+[0;32mI (1574) wifi:(trc)phytype:CBW20-SGI, snr:57, maxRate:144, highestRateIdx:0[0m
+[0;32mI (1584) wifi:(trc)rate(S-MCS7, schedIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:57, ampduState:wait operational[0m
+[0;32mI (1594) wifi:ifidx:0, rssi:-39, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:1440, he:0[0m
+[0;32mI (1604) wifi:max ampdu length exponent:3(65535 bytes), mmss:6(8 us)[0m
+[0;33mW (1604) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100caf1, TALO:0xe85e1b84, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;31mE (1614) chip[DMG]: Endpoint 0, Cluster 0x0000_0031 not found in IncreaseClusterDataVersion![0m
+[0;31mE (1624) chip[DMG]: Endpoint 0, Cluster 0x0000_0031 not found in IncreaseClusterDataVersion![0m
+[0;32mI (1634) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (1644) wifi:(extcap)mbssid:0, enhanced_mbssid_advertise:0, complete_nontxbssid_profiles:0, twt_responder: 0[0m
+[0;32mI (1654) wifi:connected with ShouldNotBeBroadcast, aid = 7, channel 6, BW20, bssid = 84:1b:5e:e8:f1:ca[0m
+[0;32mI (1664) wifi:cipher(pairwise:0x3, group:0x3), pmf:0, security:WPA2-PSK, phy:11bgn, rssi:-39[0m
+[0;32mI (1674) wifi:pm start, type: 1, itwt_start:0[0m
+
+[0;32mI (1674) wifi:pm start, type:1, aid:0x7, trans-BSSID:84:1b:5e:e8:f1:ca, BSSID[5]:0xca, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (1684) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1694) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (1704) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1714) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (1724) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1734) wifi:[0;32mI (1654) chip[SVR]: Initializing subscription resumption storage...[0m[0m
+[0;32mI (1744) chip[SVR]: Server initializing...[0m
+[0;32mI (1744) chip[TS]: Last Known Good Time: 2023-10-14T01:16:48[0m
+[0;32mI (1754) chip[FP]: Fabric index 0x1 was retrieved from storage. Compressed FabricId 0x3515974B41386453, FabricId 0x0000000000000001, NodeId 0x0000000000007283, VendorId 0xFFF1[0m
+[0;32mI (1774) chip[DMG]: AccessControl: initializing[0m
+[0;32mI (1774) chip[DMG]: Examples::AccessControlDelegate::Init[0m
+[0;32mI (1784) chip[DMG]: AccessControl: setting[0m
+[0;32mI (1784) chip[DMG]: DefaultAclStorage: initializing[0m
+[0;32mI (1794) chip[DMG]: DefaultAclStorage: 1 entries loaded[0m
+[0;32mI (1794) chip[SVR]: WARNING: mTestEventTriggerDelegate is null[0m
+dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+[0;32mI (1814) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1814) chip[ZCL]: Using ZAP configuration...[0m
+[0;32mI (1824) esp_matter_cluster: Cluster plugin init common callback[0m
+[0;32mI (1824) chip[DMG]: AccessControlCluster: initializing[0m
+[0;32mI (1834) chip[ZCL]: 0x4214638c ep 0 clus 0x0000_0030 attr 0x0000_0000 not supported[0m
+[0;32mI (1844) chip[ZCL]: Initiating Admin Commissioning cluster.[0m
+[0;32mI (1844) chip[SVR]: Fabric already commissioned. Disabling BLE advertisement[0m
+[0;32mI (1854) chip[IN]: CASE Server enabling CASE session setups[0m
+[0;32mI (1864) chip[SVR]: Joining Multicast groups[0m
+[0;32mI (1864) chip[SVR]: Server Listening...[0m
+[0;32mI (1874) esp_matter_core: Dynamic endpoint 0 added[0m
+[0;32mI (1874) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;32mI (1884) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000001 is 1 **********[0m
+[0;32mI (1904) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000001 is 0 **********[0m
+[0;32mI (1914) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000002 is 1 **********[0m
+[0;32mI (1924) esp_matter_core: Dynamic endpoint 1 added[0m
+[0;32mI (1934) chip[DL]: WIFI_EVENT_STA_START[0m
+[0;32mI (1814) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1944) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1954) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (1964) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1964) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1974) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 4[0m
+[0;32mI (1984) chip[DL]: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (1994) chip[DL]: WiFi station state change: Connecting -> Connecting_Succeeded[0m
+[5n[0;32mI (2004) chip[DL]: WiFi station state change: Connecting_Succeeded -> Connected[0m
+[0;32mI (2004) chip[DL]: WiFi station interface connected[0m
+[0;32mI (2024) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (2024) chip[DL]: Updating advertising data[0m
+[6n [0;32mI (2054) main_task: Returned from app_main()[0m
+[999C [6n [140D[0;32m> [0m[0;32mI (3684) chip[DL]: Posting ESPSystemEvent: IP Event with eventId : 3[0m
+[0;32mI (3684) chip[DL]: IP_EVENT_GOT_IP6[0m
+[0;32mI (3684) chip[DL]: IPv6 addr available. Ready on WIFI_STA_DEF interface: fe80:0000:0000:0000:424c:caff:fe40:6ebc[0m
+[0;32mI (3694) app_main: Interface IP Address changed[0m
+[0;32mI (3704) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (3704) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (3714) chip[DIS]: Advertise operational node 3515974B41386453-0000000000007283[0m
+[0;32mI (3714) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 3515974B41386453-0000000000007283.[0m
+[0;32mI (3734) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (3744) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=0 cp=0[0m
+[0;32mI (3754) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 44407C454B052F79.[0m
+[0;32mI (3774) chip[DIS]: mDNS service published: _matterc._udp[0m
+[0;32mI (3774) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (3784) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (3784) chip[DIS]: Advertise operational node 3515974B41386453-0000000000007283[0m
+[0;32mI (3794) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 3515974B41386453-0000000000007283.[0m
+[0;32mI (3804) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (3814) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=0 cp=0[0m
+[0;32mI (3814) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 44407C454B052F79.[0m
+[0;32mI (3834) chip[DIS]: mDNS service published: _matterc._udp[0m
+[0;32mI (3844) chip[SVR]: Server initialization complete[0m
+[0;32mI (3844) chip[SWU]: Stopping the watchdog timer[0m
+[0;32mI (3844) chip[SWU]: Starting the periodic query timer, timeout: 86400 seconds[0m
+[0;32mI (3854) chip[IM]: No subscriptions to resume[0m
+[0;32mI (3854) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x0000002A's Attribute 0x00000002 is 0 **********[0m
+[0;32mI (3864) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x0000002A's Attribute 0x00000002 is 0 **********[0m
+[0;32mI (3874) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x0000002A's Attribute 0x00000002 is 1 **********[0m
+[0;32mI (3894) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x0000002A's Attribute 0x00000003 is null **********[0m
+[0;32mI (3974) esp_netif_handlers: sta ip: 192.168.1.156, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3974) chip[DL]: Posting ESPSystemEvent: IP Event with eventId : 0[0m
+[0;32mI (3974) chip[DL]: BLE deinit successful and memory reclaimed[0m
+[0;32mI (3984) chip[DL]: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (3994) chip[DL]: IPv4 address changed on WiFi station interface: 192.168.1.156/255.255.255.0 gateway 192.168.1.1[0m
+[0;32mI (4004) chip[DL]: IPv4 Internet connectivity ESTABLISHED[0m
+[0;32mI (4004) app_main: BLE deinitialized and memory reclaimed[0m
+[0;32mI (4014) app_main: Interface IP Address changed[0m
+[0;32mI (4014) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (4024) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (4044) chip[DIS]: Advertise operational node 3515974B41386453-0000000000007283[0m
+[0;32mI (4044) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 3515974B41386453-0000000000007283.[0m
+[0;32mI (4054) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4054) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=0 cp=0[0m
+[0;32mI (4074) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 44407C454B052F79.[0m
+[0;32mI (4084) chip[DIS]: mDNS service published: _matterc._udp[0m
+[0K[0;32m> [0mp[3C[0K[0;32m> [0mpp[4C[0;32mI (61954) chip[EM]: >>> [E:57873r S:0 M:200748728] (U) Msg RX from 0:96B21417E6B2A025 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1) (B:234)[0m
+[0;32mI (61964) chip[IN]: CASE Server received Sigma1 message . Starting handshake. EC 0x40822dd8[0m
+[0;32mI (61964) chip[EM]: <<< [E:57873r S:0 M:223191449 (Ack:200748728)] (U) Msg TX to 0:0000000000000000 [0000] [UDP:[FE80::FC49:5010:355D:8687%st1]:41187] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)[0m
+[0;32mI (61994) chip[SC]: Received Sigma1 msg[0m
+[0;32mI (61994) chip[EM]: <<< [E:57873r S:0 M:223191450 (Ack:200748728)] (U) Msg TX to 0:0000000000000000 [0000] [UDP:[FE80::FC49:5010:355D:8687%st1]:41187] --- Type 0000:33 (SecureChannel:CASE_Sigma2Resume) (B:100)[0m
+[0;32mI (62024) chip[EM]: >>> [E:57873r S:0 M:200748729 (Ack:223191450)] (U) Msg RX from 0:96B21417E6B2A025 [0000] --- Type 0000:40 (SecureChannel:StatusReport) (B:34)[0m
+[0;32mI (62034) chip[SC]: Success status report received. Session was established[0m
+[0;32mI (62054) chip[SC]: SecureSession[0x408213a8, LSID:1951]: State change 'kEstablishing' --> 'kActive'[0m
+[0;32mI (62054) chip[IN]: CASE Session established to peer: <000000000001B669, 1>[0m
+[0;32mI (62064) chip[EM]: <<< [E:57873r S:0 M:223191451 (Ack:200748729)] (U) Msg TX to 0:0000000000000000 [0000] [UDP:[FE80::FC49:5010:355D:8687%st1]:41187] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)[0m
+[0;32mI (62094) chip[EM]: >>> [E:57874r S:1951 M:101526728] (S) Msg RX from 1:000000000001B669 [6453] --- Type 0001:02 (IM:ReadRequest) (B:52)[0m
+[0;32mI (62104) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (62104) chip[EM]: <<< [E:57874r S:1951 M:122148857 (Ack:101526728)] (S) Msg TX to 1:000000000001B669 [6453] [UDP:[FE80::FC49:5010:355D:8687%st1]:41187] --- Type 0001:05 (IM:ReportData) (B:71)[0m
+[0;32mI (62134) chip[EM]: >>> [E:57874r S:1951 M:101526729 (Ack:122148857)] (S) Msg RX from 1:000000000001B669 [6453] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)[0m
+[0;32mI (100404) chip[EM]: >>> [E:57875r S:1951 M:101526730] (S) Msg RX from 1:000000000001B669 [6453] --- Type 0001:02 (IM:ReadRequest) (B:52)[0m
+[0;32mI (100414) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (100424) chip[EM]: <<< [E:57875r S:1951 M:122148858 (Ack:101526730)] (S) Msg TX to 1:000000000001B669 [6453] [UDP:[FE80::FC49:5010:355D:8687%st1]:41187] --- Type 0001:05 (IM:ReportData) (B:71)[0m
+[0;32mI (100464) chip[EM]: >>> [E:57875r S:1951 M:101526731 (Ack:122148858)] (S) Msg RX from 1:000000000001B669 [6453] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)[0m
+[0;32mI (146894) chip[EM]: >>> [E:57876r S:1951 M:101526732] (S) Msg RX from 1:000000000001B669 [6453] --- Type 0001:02 (IM:ReadRequest) (B:52)[0m
+[0;32mI (146914) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (146914) chip[EM]: <<< [E:57876r S:1951 M:122148859 (Ack:101526732)] (S) Msg TX to 1:000000000001B669 [6453] [UDP:[FE80::FC49:5010:355D:8687%st1]:41187] --- Type 0001:05 (IM:ReportData) (B:71)[0m
+[0;32mI (146944) chip[EM]: >>> [E:57876r S:1951 M:101526733 (Ack:122148859)] (S) Msg RX from 1:000000000001B669 [6453] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)[0m
+[0;32mI (148534) chip[EM]: >>> [E:57877r S:1951 M:101526734] (S) Msg RX from 1:000000000001B669 [6453] --- Type 0001:02 (IM:ReadRequest) (B:52)[0m
+[0;32mI (148544) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (148554) chip[EM]: <<< [E:57877r S:1951 M:122148860 (Ack:101526734)] (S) Msg TX to 1:000000000001B669 [6453] [UDP:[FE80::FC49:5010:355D:8687%st1]:41187] --- Type 0001:05 (IM:ReportData) (B:71)[0m
+[0;32mI (148574) chip[EM]: >>> [E:57877r S:1951 M:101526735 (Ack:122148860)] (S) Msg RX from 1:000000000001B669 [6453] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)[0m
+
+
+[6n [999C [6n [140D[0;32m> [0m
+
+[6n [999C [6n [140D[0;32m> [0mESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c410,len:0xe58
+load:0x4086e610,len:0x2e20
+entry 0x4086c41a
+[0;32mI (23) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 23 2024 17:15:33[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (64) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (72) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (87) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (94) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (102) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (109) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (117) boot: End of partition table[0m
+[0;32mI (121) esp_image: segment 0: paddr=00020020 vaddr=42140020 size=3ee50h (257616) map[0m
+[0;32mI (183) esp_image: segment 1: paddr=0005ee78 vaddr=40800000 size=011a0h (  4512) load[0m
+[0;32mI (185) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=133618h (1259032) map[0m
+[0;32mI (448) esp_image: segment 3: paddr=00193640 vaddr=408011a0 size=19200h (102912) load[0m
+[0;32mI (473) esp_image: segment 4: paddr=001ac848 vaddr=4081a3a0 size=03be8h ( 15336) load[0m
+[0;32mI (477) esp_image: segment 5: paddr=001b0438 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (485) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (485) boot: Disabling RNG early entropy source...[0m
+[0;32mI (502) cpu_start: Unicore app[0m
+[0;33mW (510) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (517) cpu_start: Pro cpu start user code[0m
+[0;32mI (517) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (517) cpu_start: Application information:[0m
+[0;32mI (520) cpu_start: Project name:     matterOccupancySensor[0m
+[0;32mI (526) cpu_start: App version:      1.0[0m
+[0;32mI (531) cpu_start: Compile time:     Nov 23 2024 17:15:30[0m
+[0;32mI (537) cpu_start: ELF file SHA256:  0db1b5ada...[0m
+[0;32mI (542) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (547) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (552) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (557) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (561) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (569) heap_init: At 40831880 len 0004AD90 (299 KiB): RAM[0m
+[0;32mI (575) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (581) heap_init: At 50000004 len 00003FE4 (15 KiB): RTCRAM[0m
+[0;32mI (588) spi_flash: detected chip: generic[0m
+[0;32mI (592) spi_flash: flash io: dio[0m
+[0;33mW (596) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;33mW (609) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (621) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (626) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (633) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (639) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (644) main_task: Started on CPU0[0m
+[0;32mI (644) main_task: Calling app_main()[0m
+[0;32mI (664) app_driver: Sensor initialized[0m
+[0;32mI (664) button: IoT Button Version: 3.4.0[0m
+[0;32mI (664) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (674) app_main: Sensor created with endpoint_id 1[0m
+[0;31mE (674) esp_matter_core: Attribute should be non-volatile to set a deferred persistence time[0m
+[0;32mI (684) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (684) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (704) wifi:wifi driver task: 4083dcf4, prio:23, stack:6656, core=0[0m
+[0;32mI (704) wifi:wifi firmware version: a9f5b59[0m
+[0;32mI (704) wifi:wifi certification version: v7.0[0m
+[0;32mI (704) wifi:config NVS flash: enabled[0m
+[0;32mI (714) wifi:config nano formating: disabled[0m
+[0;32mI (714) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N[0m
+[0;32mI (724) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (724) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (734) wifi:Init management short buffer num: 32[0m
+[0;32mI (734) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (734) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (744) wifi:Init static rx buffer size: 1700[0m
+[0;32mI (744) wifi:Init static rx buffer num: 10[0m
+[0;32mI (754) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (754) wifi_init: rx ba win: 6[0m
+[0;32mI (754) wifi_init: tcpip mbox: 32[0m
+[0;32mI (764) wifi_init: udp mbox: 6[0m
+[0;32mI (764) wifi_init: tcp mbox: 6[0m
+[0;32mI (764) wifi_init: tcp tx win: 5760[0m
+[0;32mI (774) wifi_init: tcp rx win: 5760[0m
+[0;32mI (774) wifi_init: tcp mss: 1440[0m
+[0;32mI (784) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (784) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (794) esp_matter_core: Server Cluster 0x0000001D on endpoint 0x0000 already exists. Not creating again.[0m
+[0;33mW (804) esp_matter_core: Attribute 0x00000000 on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (814) esp_matter_core: Attribute 0x00000001 on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (824) esp_matter_core: Attribute 0x00000002 on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (834) esp_matter_core: Attribute 0x00000003 on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (844) esp_matter_core: Attribute 0x0000FFFC on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (854) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (884) chip[DL]: NVS set: chip-counters/reboot-count = 7 (0x7)[0m
+[0;32mI (884) chip[DL]: Real time clock set to 946684800 (0100/00/01 00:00:00 UTC)[0m
+[0;32mI (884) BLE_INIT: Using main XTAL as clock source[0m
+[0;32mI (894) BLE_INIT: ble controller commit:[217f1bf][0m
+[0;32mI (894) phy_init: phy_version 250,e14681b,Jan 24 2024,17:43:11[0m
+[0;32mI (944) phy: libbtbb version: 939f79c, Jan 24 2024, 17:43:26[0m
+[0;32mI (944) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (954) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (954) CHIP[DL]: BLE host-controller synced[0m
+[0;32mI (1454) chip[DL]: Starting ESP WiFi layer[0m
+[0;33mW (1454) wifi:(bf)761:0x600a7cac:0x01b4b4b0[0m
+[0;33mW (1454) wifi:(agc)0x600a7128:0xd21e8ac2, min.avgNF:0xce->0xd2(dB), RCalCount:0x1e8, min.RRssi:0xac2(-83.88)[0m
+[0;33mW (1454) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (1464) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (1464) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (1464) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (1474) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (1474) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (1474) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (1484) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (1484) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (1484) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (1494) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (1494) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (1494) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1504) wifi:mode : sta (40:4c:ca:40:6e:bc)[0m
+[0;32mI (1504) wifi:enable tsf[0m
+[0;32mI (1514) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 40[0m
+[0;33mW (1514) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1524) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (1534) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 2[0m
+[0;32mI (1534) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1544) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1554) wifi:state: init -> auth (b0)[0m
+[0;32mI (1554) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 40[0m
+[0;32mI (1554) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1534) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;32mI (1564) wifi:state: assoc -> run (10)[0m
+[0;32mI (1574) wifi:(trc)phytype:CBW20-SGI, snr:59, maxRate:144, highestRateIdx:0[0m
+[0;32mI (1584) wifi:(trc)rate(S-MCS7, schedIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:59, ampduState:wait operational[0m
+[0;32mI (1594) wifi:ifidx:0, rssi:-37, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:1440, he:0[0m
+[0;32mI (1604) wifi:max ampdu length exponent:3(65535 bytes), mmss:6(8 us)[0m
+[0;33mW (1604) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100caf1, TALO:0xe85e1b84, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;31mE (1614) chip[DMG]: Endpoint 0, Cluster 0x0000_0031 not found in IncreaseClusterDataVersion![0m
+[0;31mE (1624) chip[DMG]: Endpoint 0, Cluster 0x0000_0031 not found in IncreaseClusterDataVersion![0m
+[0;32mI (1634) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (1644) chip[SVR]: Initializing subscription resumption storage...[0m
+[0;32mI (1654) wifi:(extcap)mbssid:0, enhanced_mbssid_advertise:0, complete_nontxbssid_profiles:0, twt_responder: 0[0m
+[0;32mI (1664) wifi:connected with ShouldNotBeBroadcast, aid = 7, channel 6, BW20, bssid = 84:1b:5e:e8:f1:ca[0m
+[0;32mI (1664) wifi:cipher(pairwise:0x3, group:0x3), pmf:0, security:WPA2-PSK, phy:11bgn, rssi:-37[0m
+[0;32mI (1674) wifi:pm start, type: 1, itwt_start:0[0m
+
+[0;32mI (1684) wifi:pm start, type:1, aid:0x7, trans-BSSID:84:1b:5e:e8:f1:ca, BSSID[5]:0xca, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (1694) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1704) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (1704) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1724) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (1734) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1664) chip[SVR]: Server initializing...[0m
+[0;32mI (1744) chip[TS]: Last Known Good Time: 2023-10-14T01:16:48[0m
+[0;32mI (1754) chip[FP]: Fabric index 0x1 was retrieved from storage. Compressed FabricId 0x3515974B41386453, FabricId 0x0000000000000001, NodeId 0x0000000000007283, VendorId 0xFFF1[0m
+[0;32mI (1764) chip[DMG]: AccessControl: initializing[0m
+[0;32mI (1774) chip[DMG]: Examples::AccessControlDelegate::Init[0m
+[0;32mI (1784) chip[DMG]: AccessControl: setting[0m
+[0;32mI (1784) chip[DMG]: DefaultAclStorage: initializing[0m
+[0;32mI (1794) chip[DMG]: DefaultAclStorage: 1 entries loaded[0m
+[0;32mI (1794) chip[SVR]: WARNING: mTestEventTriggerDelegate is null[0m
+[0;32mI (1754) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1814) wifi:[0;32mI (1814) chip[ZCL]: Using ZAP configuration...[0m[0m
+[0;32mI (1814) esp_matter_cluster: Cluster plugin init common callback[0m
+[0;32mI (1824) chip[DMG]: AccessControlCluster: initializing[0m
+[0;32mI (1834) chip[ZCL]: 0x4214638c ep 0 clus 0x0000_0030 attr 0x0000_0000 not supported[0m
+[0;32mI (1834) chip[ZCL]: Initiating Admin Commissioning cluster.[0m
+[0;32mI (1844) chip[SVR]: Fabric already commissioned. Disabling BLE advertisement[0m
+[0;32mI (1854) chip[IN]: CASE Server enabling CASE session setups[0m
+[0;32mI (1854) chip[SVR]: Joining Multicast groups[0m
+[0;32mI (1864) chip[SVR]: Server Listening...[0m
+[0;32mI (1864) esp_matter_core: Dynamic endpoint 0 added[0m
+[0;32mI (1874) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;32mI (1884) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000001 is 1 **********[0m
+[0;32mI (1894) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000001 is 0 **********[0m
+[0;32mI (1904) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000406's Attribute 0x00000002 is 1 **********[0m
+[0;32mI (1924) esp_matter_core: Dynamic endpoint 1 added[0m
+[0;32mI (1924) chip[DL]: WIFI_EVENT_STA_START[0m
+AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1934) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1944) chip[DL]: I (1944) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+[0;32mI (1954) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+Done driving station state, nothing else to do...[0m
+[0;32mI (1964) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1974) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 4[0m
+[0;32mI (1994) chip[DL]: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (1994) chip[DL]: WiFi station state change: Connecting -> Connecting_Succeeded[0m
+[5n[0;32mI (2004) chip[DL]: WiFi station state change: Connecting_Succeeded -> Connected[0m
+[0;32mI (2004) chip[DL]: WiFi station interface connected[0m
+[0;32m> [0m[0;32mI (2024) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (2024) chip[DL]: Updating advertising data[0m
+[0n[0;32mI (2014) main_task: Returned from app_main()[0m
+[0;32mI (3684) chip[DL]: Posting ESPSystemEvent: IP Event with eventId : 3[0m
+[0;32mI (3684) chip[DL]: IP_EVENT_GOT_IP6[0m
+[0;32mI (3684) chip[DL]: IPv6 addr available. Ready on WIFI_STA_DEF interface: fe80:0000:0000:0000:424c:caff:fe40:6ebc[0m
+[0;32mI (3694) app_main: Interface IP Address changed[0m
+[0;32mI (3704) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (3704) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (3714) chip[DIS]: Advertise operational node 3515974B41386453-0000000000007283[0m
+[0;32mI (3714) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 3515974B41386453-0000000000007283.[0m
+[0;32mI (3734) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (3744) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=0 cp=0[0m
+[0;32mI (3754) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 9B72CF670C75B534.[0m
+[0;32mI (3764) chip[DIS]: mDNS service published: _matterc._udp[0m
+[0;32mI (3774) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (3784) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (3784) chip[DIS]: Advertise operational node 3515974B41386453-0000000000007283[0m
+[0;32mI (3794) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 3515974B41386453-0000000000007283.[0m
+[0;32mI (3804) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (3814) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=0 cp=0[0m
+[0;32mI (3814) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 9B72CF670C75B534.[0m
+[0;32mI (3834) chip[DIS]: mDNS service published: _matterc._udp[0m
+[0;32mI (3844) chip[SVR]: Server initialization complete[0m
+[0;32mI (3844) chip[SWU]: Stopping the watchdog timer[0m
+[0;32mI (3844) chip[SWU]: Starting the periodic query timer, timeout: 86400 seconds[0m
+[0;32mI (3854) chip[IM]: No subscriptions to resume[0m
+[0;32mI (3854) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x0000002A's Attribute 0x00000002 is 0 **********[0m
+[0;32mI (3864) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x0000002A's Attribute 0x00000002 is 0 **********[0m
+[0;32mI (3884) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x0000002A's Attribute 0x00000002 is 1 **********[0m
+[0;32mI (3894) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x0000002A's Attribute 0x00000003 is null **********[0m
+[0;32mI (3974) esp_netif_handlers: sta ip: 192.168.1.156, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3974) chip[DL]: Posting ESPSystemEvent: IP Event with eventId : 0[0m
+[0;32mI (3974) chip[DL]: BLE deinit successful and memory reclaimed[0m
+[0;32mI (3984) chip[DL]: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (3994) chip[DL]: IPv4 address changed on WiFi station interface: 192.168.1.156/255.255.255.0 gateway 192.168.1.1[0m
+[0;32mI (4004) chip[DL]: IPv4 Internet connectivity ESTABLISHED[0m
+[0;32mI (4004) app_main: BLE deinitialized and memory reclaimed[0m
+[0;32mI (4014) app_main: Interface IP Address changed[0m
+[0;32mI (4014) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (4024) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (4044) chip[DIS]: Advertise operational node 3515974B41386453-0000000000007283[0m
+[0;32mI (4044) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 3515974B41386453-0000000000007283.[0m
+[0;32mI (4054) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4054) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=0 cp=0[0m
+[0;32mI (4074) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 9B72CF670C75B534.[0m
+[0;32mI (4084) chip[DIS]: mDNS service published: _matterc._udp[0m
